@@ -2,16 +2,27 @@
 
 var docRef = app.activeDocument;
 
-var nyt_rename_dlg = new Window("dialog", "Bulk Rename Artboards");
+var kr_rename_dlg = new Window("dialog", "Bulk Rename Artboards");
 
-nyt_rename_dlg.orientation = "column";
+kr_rename_dlg.orientation = "column";
+
+var headingGrp = kr_rename_dlg.add("group", undefined, "");
+headingGrp.orientation = "column";
+
+// Create a text frame
+var textFrame = headingGrp.add("statictext", undefined, "", { multiline: true });
+textFrame.size = [280, 20]; // Adjust the size of the text frame
+
+// Set the contents (text) of the text frame
+textFrame.text = "Please enter your search and replace criteria.";
 
 // SEARCH GRP
-var searchGrp = nyt_rename_dlg.add("group", undefined, "");
+var searchGrp = kr_rename_dlg.add("group", undefined, "");
 searchGrp.orientation = "row";
 
 var searchSt = searchGrp.add("statictext", undefined, "Search:");
 searchSt.size = [60, 20];
+
 
 var searchEt = searchGrp.add("edittext", undefined, "", {
   multiline: false,
@@ -19,7 +30,7 @@ var searchEt = searchGrp.add("edittext", undefined, "", {
 searchEt.size = [200, 20];
 
 // REPLACE GRP
-var replaceGrp = nyt_rename_dlg.add("group", undefined, "");
+var replaceGrp = kr_rename_dlg.add("group", undefined, "");
 replaceGrp.orientation = "row";
 
 var replaceSt = replaceGrp.add("statictext", undefined, "Replace:");
@@ -30,26 +41,26 @@ var replaceEt = replaceGrp.add("edittext", undefined, "", {
 });
 replaceEt.size = [200, 20];
 
-nyt_rename_dlg.btnPnl = nyt_rename_dlg.add("group", undefined, "");
-nyt_rename_dlg.btnPnl.orientation = "row";
+kr_rename_dlg.btnPnl = kr_rename_dlg.add("group", undefined, "");
+kr_rename_dlg.btnPnl.orientation = "row";
 
-nyt_rename_dlg.btnPnl.cancelBtn = nyt_rename_dlg.btnPnl.add(
+kr_rename_dlg.btnPnl.cancelBtn = kr_rename_dlg.btnPnl.add(
   "button",
   undefined,
   "Cancel",
   { name: "cancel" }
 );
-nyt_rename_dlg.btnPnl.cancelBtn.onClick = function () {
-  nyt_rename_dlg.close();
+kr_rename_dlg.btnPnl.cancelBtn.onClick = function () {
+  kr_rename_dlg.close();
 };
 
-nyt_rename_dlg.btnPnl.okBtn = nyt_rename_dlg.btnPnl.add(
+kr_rename_dlg.btnPnl.okBtn = kr_rename_dlg.btnPnl.add(
   "button",
   undefined,
   "Rename",
   { name: "ok" }
 );
-nyt_rename_dlg.btnPnl.okBtn.onClick = function () {
+kr_rename_dlg.btnPnl.okBtn.onClick = function () {
   var searchPattern = new RegExp(searchEt.text, "g");
   var replaceText = replaceEt.text;
 
@@ -60,7 +71,7 @@ nyt_rename_dlg.btnPnl.okBtn.onClick = function () {
     artboard.name = newName;
   }
 
-  nyt_rename_dlg.close();
+  kr_rename_dlg.close();
 };
 
-nyt_rename_dlg.show();
+kr_rename_dlg.show();
