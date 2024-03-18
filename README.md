@@ -45,3 +45,21 @@ If you open a lot of Illustrator files without closing them, sometimes the windo
 ### [Open Multipage PDF](OpenMultipagePDF.jsx)
 
 This awesome script will extract each page of a PDF file into its own artboard. This is useful for adding electronic signatures and other text to forms. It comes in especially handy if you don't have access to a printer. There are all sorts of other things you can do with the extracted PDF depending on how the PDF was generated. Credit to **Carlos Canto**.
+
+## Adobe PDF Presets
+
+These will work with Photoshop, Illustrator, and Indesign.
+
+### On Windows 11, drop the *.joboptions files here:
+
+C:\Users\{your Windows user name}\AppData\Roaming\Adobe\Adobe PDF\Settings
+
+### On Mac, drop the *.joboptions files here:
+
+[computer] > Library > Application Support > Adobe > Adobe PDF > Settings
+
+- Proof (Bleeds Only).joboptions
+- Proof (No Marks or Bleeds).joboptions
+- Proof (Trim Marks Only).joboptions
+- Proof (All Marks and Bleeds).joboptions
+
