@@ -22,7 +22,7 @@ _"Copy the script to your computer’s hard disk. If you place the script in the
 
 Here is more comprehensive Illustrator scripting documentation:
 
-[Installing scripts in the Scripts menu](https://ai-scripting.docsforadobe.dev/introduction/executingScripts.html#installing-scripts-in-the-scripts-menu)
+<a href="https://ai-scripting.docsforadobe.dev/introduction/executingScripts.html#installing-scripts-in-the-scripts-menu" target="_blank">Installing scripts in the Scripts menu</a>
 
 ### Windows 11:
 
@@ -55,6 +55,10 @@ If you open a lot of Illustrator files without closing them, sometimes the windo
 ### [Open Multipage PDF](OpenMultipagePDF.jsx)
 
 This awesome script will extract each page of a PDF file into its own artboard. This is useful for adding electronic signatures and other text to forms. It comes in especially handy if you don't have access to a printer. There are all sorts of other things you can do with the extracted PDF depending on how the PDF was generated. Credit to **Carlos Canto**.
+
+### [Export Selected Artboards](ExportSelectedArtboards.jsk)
+
+Select from the list of, or select all, artboards to PDF (Multipage PDF supported), JPG, or PNG. Specify filename and location to save the exported file(s). _-Keith Ratner-_
 
 ## Adobe PDF Presets
 
