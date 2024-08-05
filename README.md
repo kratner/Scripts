@@ -6,6 +6,12 @@
 
 _For comprehensive Adobe Scripting Check out **[aenhancers on GitHub](https://github.com/aenhancers)** (United 3rd-party Adobe devs!)_
 
+## Photoshop Scripts
+
+#### Windows 11 / Photoshop 2024 script location:
+
+C:\Program Files\Adobe\Adobe Photoshop 2024\Presets\Scripts
+
 ## Illustrator Scripts
 
 [Learn to run and install scripts in Illustrator. (helpx.adobe.com)](https://helpx.adobe.com/illustrator/using/automation-scripts.html)
@@ -50,11 +56,11 @@ This awesome script will extract each page of a PDF file into its own artboard. 
 
 These will work with Photoshop, Illustrator, and Indesign.
 
-### On Windows 11, drop the *.joboptions files here:
+### On Windows 11, drop the \*.joboptions files here:
 
 C:\Users\{your Windows user name}\AppData\Roaming\Adobe\Adobe PDF\Settings
 
-### On Mac, drop the *.joboptions files here:
+### On Mac, drop the \*.joboptions files here:
 
 [computer] > Library > Application Support > Adobe > Adobe PDF > Settings
 
@@ -62,4 +68,3 @@ C:\Users\{your Windows user name}\AppData\Roaming\Adobe\Adobe PDF\Settings
 - Proof (No Marks or Bleeds).joboptions
 - Proof (Trim Marks Only).joboptions
 - Proof (All Marks and Bleeds).joboptions
-
