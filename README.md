@@ -24,6 +24,10 @@ Here is more comprehensive Illustrator scripting documentation:
 
 [Installing scripts in the Scripts menu](https://ai-scripting.docsforadobe.dev/introduction/executingScripts.html#installing-scripts-in-the-scripts-menu)
 
+### Windows 11:
+
+C:\Program Files\Adobe\Adobe Illustrator 2024\Presets\en_US\Scripts
+
 [JavaScript Tools Guide CC](https://extendscript.docsforadobe.dev/)
 
 [Adobe Illustrator Scripting Guide](https://github.com/aenhancers/illustrator-scripting-guide)
